@@ -14,7 +14,7 @@ npm install glob-slash --save
 var globSlash = require('glob-slash');
 
 console.log(globSlash('!**/testing')) // OUTPUTS: !/**/testing
-console.log(globSlash('another-test//**')) // OUTPUTS: !/**/testing
+console.log(globSlash('another-test//**')) // OUTPUTS: /another-test/**
 ```
 
 ## Run Tests
