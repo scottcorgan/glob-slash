@@ -6,7 +6,7 @@ exports.normalize = normalize;
 function slashGlob (value) {
     
   if (value.charAt(0) === '!') {
-    return '!' + exports.normalize(value.substr(1));
+    return '!' + exports.normalize(value.slice(1));
   }
   
   return exports.normalize(value);
